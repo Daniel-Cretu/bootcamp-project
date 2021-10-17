@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curriculum Vitae of Daniel CRETU</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./src/CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/CSS/styles.css" />
   </head>
-  <body>
+  <body class="vh-100">
     <header>
-      <h1 class="slidein_ltr_3s">CV / Portofolio</h1>
+      <h1 class="portfolio_header">CV / Portofolio</h1>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
@@ -19,96 +20,202 @@
       </nav>
     </header>
     <main>
-      <aside id="left_aside_secction">
-        <section id="about">
-          <h2>About</h2>
-          <figure>
-            <img
-              src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
-              alt="Avatar"
-              width="100"
-            />
-            <figcaption>Daniel CRETU</figcaption>
-          </figure>
-          <!-- <figure>
-            <figcaption>English speaking skills sample</figcaption>
-            <audio src="#" controls></audio>
-          </figure> -->
-          <!-- <p>Lorem ipsum dolor sit amet consectetur.</p> -->
-        </section>
-        <section class="slidein_ltr_5s">
-          <h2>Contact</h2>
-          <ul>
-            <li>Tel: <a href="tel:+373541353">Call me</a></li>
-            <li>Email: danielcretu1998@gmail.com</li>
-            <li>
-              Address:
-              <address>placeholder</address>
-            </li>
-            <li>Website link: <a href="#">http://placeholder.com</a></li>
-          </ul>
-        </section>
-      </aside>
-      <article id="right_article_section">
-        <h2>General info</h2>
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-sm">
+            <aside id="left_aside_secction" class="p-3">
+              <section id="about">
+                <h2>About</h2>
+                <figure>
+                  <img
+                    src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+                    alt="Avatar"
+                    width="100"
+                  />
+                  <figcaption>Daniel CRETU</figcaption>
+                </figure>
+              </section>
+              <section>
+                <h2>Contact</h2>
+                <ul>
+                  <li>Tel: <a href="tel:+373541353">Call me</a></li>
+                  <li>Email: danielcretu1998@gmail.com</li>
+                  <li>
+                    Address:
+                    <address>placeholder</address>
+                  </li>
+                  <li>Website link: <a href="#">http://placeholder.com</a></li>
+                </ul>
+              </section>
+            </aside>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <article id="right_article_section" class="p-3">
+                <h2>General info</h2>
+                <hr />
+                <div class="row">
+                  <div class="col-lg-6">
+                    <section id="skills" class="p-2">
+                      <h2>Skills</h2>
+                      <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>SQL</li>
+                        <li>PL/SQL</li>
+                        <li>PHP</li>
+                        <li>Laravel</li>
+                        <li>Bootstrap</li>
+                        <li>VueJS</li>
+                      </ul>
+                    </section>
+                  </div>
+                  <div class="col-xl-6">
+                    <section id="experience" class="p-2">
+                      <h2>Experience</h2>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Period</th>
+                            <th>Place</th>
+                            <th>Position/Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2021-Present</td>
+                            <td>Developmentaid</td>
+                            <td>
+                              <section>
+                                <h3>Intern</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                              </section>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2021-Present</td>
+                            <td>USM</td>
+                            <td>
+                              <details>
+                                <summary>position 1</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                              </details>
+                              <details>
+                                <summary>position 2</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                              </details>
+                            </td>
+                          </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                      </table>
+                    </section>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="row">
+              <h2>Contact me</h2>
+              <hr />
+              <form id="my-form">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="fullNameInput">Full name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fullNameInput"
+                      placeholder="John Doe"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="emailAddressInput">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailAddressInput"
+                      placeholder="placeholder@example.com"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="messageInput">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="messageInput"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
 
-        <section id="skills">
-          <h2>Skills</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-            <li>SQL</li>
-            <li>PL/SQL</li>
-            <li>PHP</li>
-            <li>Laravel</li>
-            <li>Bootstrap</li>
-            <li>VueJS</li>
-          </ul>
-        </section>
-        <section id="experience">
-          <h2>Experience</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Period</th>
-                <th>Place</th>
-                <th>Position/Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>2021-Present</td>
-                <td>Developmentaid</td>
-                <td>
-                  <section>
-                    <h3>Intern</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                  </section>
-                </td>
-              </tr>
-              <tr>
-                <td>2021-Present</td>
-                <td>USM</td>
-                <td>
-                  <details>
-                    <summary>position 1</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                  </details>
-                  <details>
-                    <summary>position 2</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                  </details>
-                </td>
-              </tr>
-            </tbody>
-            <tfoot></tfoot>
-          </table>
-        </section>
-      </article>
+                <button class="btn btn-primary my-2" type="submit">
+                  Submit form
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div
+          id="formToast"
+          class="toast"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+          style="background-color: rgba(55, 55, 55, 0.8)"
+        >
+          <div class="toast-header" style="background-color: inherit">
+            <strong class="me-auto">Toast !</strong>
+            <small id="form-toast-time">Placeholder time</small>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+              style="background-color: wheat"
+            ></button>
+          </div>
+          <div id="form-toast-message" class="toast-body">
+            Placeholder message.
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
-      <div>Copyright &copy; 2021, Developmentaid</div>
+      <div>Copyright &copy; 2021, Daniel CRETU</div>
     </footer>
+
+    <script src="./src/JS/bootstrap.bundle.min.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document
+          .getElementById("my-form")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+            var toastOnFormSubmit = document.getElementById("formToast");
+
+            var toast = new bootstrap.Toast(toastOnFormSubmit);
+
+            document.getElementById("form-toast-message").textContent =
+              "Be sure to check for a reply, " +
+              document.getElementById("fullNameInput").value +
+              "!";
+            var today = new Date();
+            document.getElementById("form-toast-time").textContent =
+              today.getHours() +
+              ":" +
+              today.getMinutes() +
+              ":" +
+              today.getSeconds();
+
+            toast.show();
+          });
+      });
+    </script>
   </body>
 </html>
