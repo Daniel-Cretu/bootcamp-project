@@ -10,61 +10,11 @@
 * {
   color: wheat;
 }
-/* Start Header */
+
 body {
   font-family: "Lora", serif;
-  /* color: wheat; */
   background-color: rgb(61, 61, 61);
 }
-
-header {
-  position: sticky;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(54, 54, 54);
-  padding: 20px 50px;
-}
-
-nav > ul {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
-
-li > a {
-  text-decoration: none;
-  color: inherit;
-}
-li > a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-nav li {
-  list-style: none;
-}
-
-.portfolio_header {
-  animation-duration: 3s;
-  animation-name: show_in;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-}
-
-@keyframes show_in {
-  from {
-    color: transparent;
-  }
-
-  to {
-    color: inherit;
-  }
-}
-
-/* End Header */
 
 /* Footer */
 footer {
@@ -90,21 +40,14 @@ footer {
     outline-offset: 5px;
   }
 }
-
 /* Footer End */
 
 /* Main  */
-
 main {
   display: flex;
   flex-direction: row;
   min-height: 100vh;
   margin-bottom: 20vh;
-}
-
-#left_aside_secction {
-  /* max-width: 300px; */
-  background-color: rgb(70, 70, 70);
 }
 
 #about {
@@ -124,8 +67,76 @@ main {
   transform: scale(1.5);
 }
 
-/* #right_article_section {
-  padding: 25px;
-} */
+.list-group-item {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+}
 
+#text-content {
+  background-color: rgb(54, 54, 54);
+}
 /* End Main */
+
+/* Side Menus */
+#left-menu {
+  height: 400px;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: calc(50vh - 200px);
+  display: flex;
+}
+
+#right-menu {
+  height: 280px;
+  position: fixed;
+  right: 0;
+  top: calc(50vh - 140px);
+  display: flex;
+}
+
+#left_aside_secction {
+  background-color: rgb(54, 54, 54);
+  width: 250px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.profile-contact-links {
+  font-size: 30px;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  height: 100%;
+}
+
+nav > ul > li > a {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border: 1px solid wheat;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+nav > ul > li > a:hover {
+  transform: scale(1.3);
+}
+
+li > a {
+  text-decoration: none;
+  color: inherit;
+}
+li > a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+nav li {
+  list-style: none;
+}
+/* End Side Menus */
